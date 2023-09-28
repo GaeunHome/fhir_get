@@ -7,14 +7,12 @@ def read_fhir_appointments():
 
     # 獲得FHIR Appointment數據中的值
     for entry in fhir_data['entry']:
-        appointment_id = entry['resource']['id']
         appointment_description = entry['resource']['description']
         appointment_start = entry['resource']['start']
         appointment_end = entry['resource']['end']
         participant_actor_reference = entry['resource']['participant'][0]['actor']['reference']
 
         # 印出所有Appointment
-        print("Appointment ID:", appointment_id)
         print("Appointment Description:", appointment_description)
         print("Appointment Start:", appointment_start)
         print("Appointment End:", appointment_end)
