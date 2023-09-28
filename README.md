@@ -4,3 +4,4 @@
 <p>2. 輸入http://localhost:8080/fhir。</p>
 <h3>使用Appointment資料表</h3>
 <p>1. Appointment的participant，若是需要Patient或是Practitioner作為reference，FHIR資料庫中務必先有以上資料，否則會報錯400</p>
+<h4>備註：FHIR資料庫中，每筆資料都會有自己的id，此id代表進入FHIR資料庫的順序</h4>
